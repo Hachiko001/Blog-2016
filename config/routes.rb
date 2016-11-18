@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get '/articles', to: 'articles#index'
 
+  resources :articles, only:[:index,:new,:create,:show,:edit,:update,:destroy]
+  resources :comments, only:[:create,:new]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get '/hello', to: 'hello#index'
-  post '/hello', to: 'hello#say_hello'
+
+
 end

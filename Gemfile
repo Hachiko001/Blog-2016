@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
-
+#gem for boostrap
+gem 'boostrap-sass'
+gem 'bootstrap', '~> 4.0.0.alpha5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg'
-
+gem 'wdm', '>= 0.1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
